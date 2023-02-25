@@ -13,6 +13,13 @@ $x = "list";
 <x-dashboard.liste />
 @else
 @endif
+@if(isset($msg))
+<div class="alert alert-success" role="alert">
+  {{$msg}}
+</div>
+@else
+@endif
+
 
 <x-dashboard.about-modal />
 <x-dashboard.service-modal />
